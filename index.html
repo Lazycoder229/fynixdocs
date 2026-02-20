@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="icon" type="image/svg+xml" href="/fynixlogo.svg" />
+      <style>
+        @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=JetBrains+Mono:wght@400;500&family=DM+Sans:wght@300;400;500&display=swap');
+        .font-display { font-family: 'Syne', sans-serif; }
+        .font-mono-code { font-family: 'JetBrains Mono', monospace; }
+        body { font-family: 'DM Sans', sans-serif; }
+
+        .orb { position: absolute; border-radius: 50%; filter: blur(120px); opacity: 0.15; animation: drift 12s ease-in-out infinite alternate; }
+        .orb-1 { width: 600px; height: 600px; background: #4f6ef7; top: -200px; left: -100px; animation-duration: 14s; }
+        .orb-2 { width: 400px; height: 400px; background: #7c3aed; top: 100px; right: -50px; animation-duration: 10s; animation-delay: -3s; }
+        .orb-3 { width: 300px; height: 300px; background: #06b6d4; bottom: 0; left: 40%; animation-duration: 16s; animation-delay: -6s; }
+        @keyframes drift { 0% { transform: translate(0,0) scale(1); } 100% { transform: translate(40px,30px) scale(1.08); } }
+
+        @keyframes fadeUp { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
+        .animate-fade-up { animation: fadeUp 0.7s ease forwards; }
+        .delay-100 { animation-delay: 0.1s; opacity: 0; }
+        .delay-200 { animation-delay: 0.2s; opacity: 0; }
+        .delay-300 { animation-delay: 0.3s; opacity: 0; }
+        .delay-450 { animation-delay: 0.45s; opacity: 0; }
+
+        .gradient-text { background: linear-gradient(135deg, #fff 30%, #93b4ff 70%, #c792ea 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+        .stat-gradient { background: linear-gradient(135deg, #fff, #93b4ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+
+        .syn-keyword { color: #c792ea; }
+        .syn-fn { color: #82aaff; }
+        .syn-string { color: #c3e88d; }
+        .syn-var { color: #f78c6c; }
+        .syn-comment { color: #546e7a; }
+        .syn-type { color: #ffcb6b; }
+        .syn-punc { color: #89ddff; }
+        .syn-tag { color: #f07178; }
+        .syn-attr { color: #ffcb6b; }
+
+        .feature-card-hover:hover { border-color: rgba(79,110,247,0.3); transform: translateY(-2px); box-shadow: 0 20px 40px rgba(0,0,0,0.3); }
+        .feature-card-hover::before { content: ''; position: absolute; inset: 0; background: linear-gradient(135deg, rgba(79,110,247,0.05) 0%, transparent 60%); opacity: 0; transition: opacity 0.3s; border-radius: inherit; }
+        .feature-card-hover:hover::before { opacity: 1; }
+
+        .btn-primary-glow:hover { box-shadow: 0 10px 30px rgba(79,110,247,0.4); }
+        .footer-link:hover { color: white; }
+      </style>
+
+  </head>
+  <body>
+    <div id="app-root"></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
