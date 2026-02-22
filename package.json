@@ -13,9 +13,9 @@
     "vite": "^7.1.11"
   },
   "dependencies": {
-    "fynixui": "^1.0.10",
     "@tailwindcss/vite": "^4.1.18",
     "fdir": "^5.1.0",
+    "fynixui": "^1.0.11",
     "tailwindcss": "^4.1.18",
     "typescript": "^5.9.3"
   }
