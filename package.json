@@ -8,14 +8,15 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "@rollup/plugin-typescript": "^12.3.0",
     "@types/node": "^25.2.0",
+    "typescript": "^5.9.3",
     "vite": "^7.1.11"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.18",
     "fdir": "^5.1.0",
-    "fynixui": "^1.0.10",
-    "tailwindcss": "^4.1.18",
-    "typescript": "^5.9.3"
+    "fynixui": "^1.0.12",
+    "tailwindcss": "^4.1.18"
   }
 }
