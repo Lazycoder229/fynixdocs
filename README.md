@@ -1,6 +1,6 @@
 <div align="center">
 
-# Fynix Starter Template
+# Fynix Documentation
 
 **Get started building modern, reactive web applications with Fynix**
 
