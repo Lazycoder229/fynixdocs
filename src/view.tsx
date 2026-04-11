@@ -13,15 +13,15 @@ import {
   SuccessButton,
   WarningButton,
 } from "fynixui/custom/button";
-import TodoApp from "./todo/view";
-import TableView from "./table/view";
+import TodoApp from "../../todo/view";
+import TableView from "../../table/view";
 
 export default function Home() {
   return (
     <div r-class="">
       <HomePage />
       {/* <TodoApp /> */}
-    {/*   <TableView/> */}
+      {/*   <TableView/> */}
       {/*  <h1>Hello, Fynix!</h1>
       
       <PrimaryButton value="Click Me" />

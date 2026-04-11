@@ -19,6 +19,6 @@
 
     "types": ["fynixui/types/jsx"]
   },
-  "include": ["src/**/*", "src/**/*.tsx"],
+  "include": ["src/**/*", "src/**/*.tsx", "../table", "../todo"],
   "exclude": ["node_modules", "dist", "build"]
 }
