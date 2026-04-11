@@ -1,11 +1,10 @@
-import { Fynix, Path } from "fynixui";
-
-export default function Docs() {
+import { Fynix, Path, VNode } from "fynixui";
+import Sidebar from "../sidebar/view";
+export default function Docs({ children }): VNode {
   return (
-    <div>
-      <h1>Documentation</h1>
-      <p>Welcome to the documentation!</p>
-      <Path to="/" r-class="text-blue-500 hover:underline" value="Back" />
+    <div r-class="flex h-screen overflow-hidden">
+      <Sidebar />
+      <main r-class="flex-1 overflow-y-auto p-4">{children}</main>
     </div>
   );
 }

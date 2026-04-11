@@ -10,7 +10,6 @@
     "jsx": "preserve",
     "jsxFactory": "Fynix",
     "jsxFragmentFactory": "Fynix.Fragment",
-    "baseUrl": ".",
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "skipLibCheck": true,

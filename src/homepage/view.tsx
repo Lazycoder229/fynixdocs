@@ -1,6 +1,5 @@
 // src/homepage/view.tsx
-import { Fynix, Path, VNode } from "fynixui";
-import { For } from "fynixui/hooks/nixFor";
+import { Fynix, Path, VNode, For } from "fynixui";
 
 // ─── Data constants ────
 
@@ -177,14 +176,18 @@ const FOOTER_RESOURCES = [
   { to: "/blog", label: "Blog" },
 ];
 
-const FOOTER_COMMUNITY = [{ href: "#", label: "GitHub" }];
+const FOOTER_COMMUNITY = [
+  { href: "https://github.com/Lazycoder229/fynix.git", label: "GitHub" },
+];
 
 const FOOTER_COMPANY = [
   { to: "/privacy", label: "Privacy Policy" },
   { to: "/contact", label: "Contact" },
 ];
 
-const FOOTER_SOCIAL = [{ href: "#", label: "GitHub" }];
+const FOOTER_SOCIAL = [
+  { href: "https://github.com/Lazycoder229/fynix.git", label: "GitHub" },
+];
 
 // ─── Color lookup maps (avoids complex inline ternary chains) ──────────────────
 
@@ -354,7 +357,7 @@ export default function HomePage() {
 
           <div r-class="flex items-center gap-3">
             <a
-              href="https://github.com/"
+              href="https://github.com/Lazycoder229/fynix.git"
               target="_blank"
               rel="noopener noreferrer"
               r-class="text-gray-600 hover:text-gray-900 transition-colors text-sm"
@@ -394,12 +397,12 @@ export default function HomePage() {
 
         <div r-class="mt-12 flex flex-wrap justify-center gap-4">
           <Path
-            to="/docs"
+            to="/docs/pages"
             value="Get Started"
             r-class="px-8 py-3 rounded-lg bg-gray-900 text-white font-semibold text-base hover:bg-gray-800 transition-all"
           />
           <a
-            href="https://github.com/"
+            href="https://github.com/Lazycoder229/fynix.git"
             target="_blank"
             rel="noopener noreferrer"
             r-class="px-8 py-3 rounded-lg border border-gray-300 hover:bg-gray-100 text-gray-900 font-semibold text-base transition-all"

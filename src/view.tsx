@@ -13,12 +13,17 @@ import {
   SuccessButton,
   WarningButton,
 } from "fynixui/custom/button";
+import TodoApp from "./todo/view";
+import TableView from "./table/view";
 
 export default function Home() {
   return (
     <div r-class="">
       <HomePage />
+      {/* <TodoApp /> */}
+    {/*   <TableView/> */}
       {/*  <h1>Hello, Fynix!</h1>
+      
       <PrimaryButton value="Click Me" />
       <SecondaryButton
       flex gap-2 items-center justify-center min-h-screen py-2
