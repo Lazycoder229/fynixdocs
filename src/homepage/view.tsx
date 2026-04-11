@@ -365,7 +365,7 @@ export default function HomePage() {
               GitHub
             </a>
             <Path
-              to="/docs"
+              to="/docs/pages"
               value="Get Started"
               r-class="px-4 py-2 rounded-lg bg-gray-900 text-white text-sm font-semibold hover:bg-gray-800 transition-all"
             />
